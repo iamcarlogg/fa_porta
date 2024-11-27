@@ -23,10 +23,10 @@ export default {
         pinkuDark: "#F86A74"
       },
       backgroundImage:{
-        'welcome': "url('/src/assets/images/welcome.svg')",
+        'welcome': "url('welcome.svg')",
         'gradient-welcome': 'linear-gradient(to bottom, white 1%, var(--tw-colors-cyanm) 90%)',
-        'welcome-question': "url('/src/assets/images/preguntainicio.png')",
-        'fovialmarco': "url('/src/assets/images/fovialmarco.svg')",
+        'welcome-question': "url('preguntainicio.png')",
+        'fovialmarco': "url('fovialmarco.svg')",
       }
     },
 

@@ -24,9 +24,9 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="relative z-20 w-full px-3 bg-cyanm h-20 flex items-center">
+    <nav className="relative z-50 w-full px-3 bg-cyanm h-20 flex items-center">
       {/* Logo */}
-      <img src="logofa.svg" className="relative size-20 p-2" alt="Logo" />
+      <Link to="/"><img src="logofa.svg" className="relative size-20 p-2" alt="Logo" /></Link>
 
       {/* Lista de navegación */}
       <ul className="text-xl w-full list-none flex justify-end relative">
@@ -55,7 +55,7 @@ function Navbar() {
               <div>
                 <Link to="/publicitario">
                   <button
-                    className="block w-full text-left px-4 py-2 text-sm bg-purplem text-purpleDarker rounded-lg hover:bg-purpleDark hover:text-white transition transform duration-200"
+                    className="block w-full text-left px-4 py-2 text-[15px] font-medium bg-purplem text-purpleDarker rounded-lg hover:bg-purpleDark hover:text-white transition transform duration-200"
                     role="menuitem"
                   >
                     Diseño publicitario
@@ -63,7 +63,7 @@ function Navbar() {
                 </Link>
                 <Link to="/editorial">
                   <button
-                    className="block w-full text-left px-4 py-2 text-sm bg-purplem text-purpleDarker rounded-lg hover:bg-purpleDark hover:text-white transition transform duration-200 "
+                    className="block w-full text-left px-4 py-2 text-[15px] font-medium bg-purplem text-purpleDarker rounded-lg hover:bg-purpleDark hover:text-white transition transform duration-200 "
                     role="menuitem"
                   >
                     Editorial
@@ -71,7 +71,7 @@ function Navbar() {
                 </Link>
                 <Link to="/Ilustracion">
                   <button
-                    className="block w-full text-left px-4 py-2 text-sm bg-purplem text-purpleDarker rounded-lg hover:bg-purpleDark hover:text-white transition transform duration-200"
+                    className="block w-full text-left px-4 py-2 text-[15px] font-medium bg-purplem text-purpleDarker rounded-lg hover:bg-purpleDark hover:text-white transition transform duration-200"
                     role="menuitem"
                   >
                     Ilustración Aplicada

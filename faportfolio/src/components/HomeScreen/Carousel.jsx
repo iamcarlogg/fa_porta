@@ -1,93 +1,75 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const Carousel = () => {
   const images = [
-    { src: "/src/assets/images/img1.png", link: "/page1" },
-    { src: "/src/assets/images/img2.png", link: "/page2" },
-    { src: "/src/assets/images/img3.png", link: "/page3" },
-    { src: "/src/assets/images/img4.png", link: "/page4" },
-    { src: "/src/assets/images/img5.png", link: "/page5" },
+    { src: "img1.png", link: "/page1",nombre:"Global Money Week 2024",cat:"Diseño publicitario" },
+    { src: "img2.png", link: "/page2",nombre:"Lotería de FOVIALITO",cat:"Ilustracion Aplicada" },
+    { src: "img3.png", link: "/page3",nombre:"SerTOC",cat:"Diseño editorial" },
+    { src: "img4.png", link: "/page4",nombre:"Revista REGA", cat:"Diseño editorial" },
+    { src: "img5.png", link: "/page5",nombre:"Mao Sorpresas",cat:"Diseño publicitario" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const totalImages = images.length;
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? totalImages - 1 : prevIndex - 1));
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
+    setCurrentIndex((prevIndex) => (prevIndex === totalImages - 1 ? 0 : prevIndex + 1));
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(nextSlide, 3000); // Cambiar cada 3 segundos
+    return () => clearInterval(intervalId); // Limpiar el intervalo al desmontar el componente
+  });
+
+  const displayedImages = [
+    images[(currentIndex - 1 + totalImages) % totalImages], // Imagen anterior
+    images[currentIndex], // Imagen actual
+    images[(currentIndex + 1) % totalImages], // Imagen siguiente
+  ];
 
   return (
     <div className="relative w-full max-w-5xl mx-auto">
       {/* Botón Anterior */}
-      <button
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-500 p-3 rounded-full text-white hover:bg-gray-600 transition"
-        onClick={prevSlide}
-      >
-        &#8592;
-      </button>
 
       {/* Carrusel */}
-      <div className="flex justify-center items-center overflow-hidden relative">
+      <div className="flex justify-center items-center overflow-hidden relative xl:scale-[1.5]">
         <div className="flex items-center justify-center w-full space-x-4">
-          {images.map((image, index) => {
-            const isCurrent = index === currentIndex;
-            const isPrevious =
-              index === (currentIndex - 1 + images.length) % images.length;
-            const isNext =
-              index === (currentIndex + 1) % images.length;
-
-            // Clases de posición
-            const position = isCurrent
-              ? "scale-100 z-10 opacity-100"
-              : isPrevious || isNext
-              ? "scale-[0.80] opacity-50 cursor-pointer"
-              : "hidden";
-
-            return (
-              <div
-                key={index}
-                className={`transition-transform transform duration-500 ease-in-out ${position}`}
-                onClick={
-                  isPrevious
-                    ? prevSlide
-                    : isNext
-                    ? nextSlide
-                    : undefined // No clic en el actual
+          {displayedImages.map((image, index) => (
+            <div
+              key={index}
+              className={`transition-transform transform duration-500 ease-in-out ${
+                index === 1
+                  ? "scale-100 z-10 opacity-100"
+                  : "scale-[0.80] opacity-50"
+              }`}
+              onClick={() => {
+                if (index === 1) {
+                  window.location.href = image.link; // Redirección si la imagen es la actual
                 }
-              >
-                {/* Imagen con funcionalidad */}
-                <img
-                  src={image.src}
-                  alt={`Slide ${index}`}
-                  className={`w-100 h-80 rounded-lg shadow-lg ${
-                    isCurrent ? "cursor-pointer" : ""
-                  }`}
-                  onClick={
-                    isCurrent
-                      ? () => window.location.href = image.link // Redirección
-                      : undefined
-                  }
-                />
-              </div>
-            );
-          })}
+              }}
+            >
+              <img
+                src={image.src}
+                alt={`Slide ${index}`}
+                className={`w-100 h-80 rounded-lg shadow-lg ${
+                  index === 1 ? "cursor-pointer" : ""
+                }`}
+              />
+              {index === 1 && (
+                <div className="text-center mt-2">
+                  <p className="font-serif text-sm font-bold">{image.nombre}</p>
+
+                  <p className="font-serif text-sm font-light">{image.cat}</p>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
-
-      {/* Botón Siguiente */}
-      <button
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-500 p-3 rounded-full text-white hover:bg-gray-600 transition"
-        onClick={nextSlide}
-      >
-        &#8594;
-      </button>
     </div>
   );
 };

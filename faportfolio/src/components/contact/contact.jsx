@@ -3,8 +3,8 @@ function Contact(){
     return(
         <>
             <section className="relative h-[90vh] w-full bg-cyanLight flex flex-row justify-center items-center">
-            <img className="absolute left-0 xl:left-[10rem] top-0" src="/src/assets/images/plantaarriba 1.svg"></img>
-            <img className="absolute top-0 right-[26rem] xl:right-[40rem]" src="/src/assets/images/plantitaarriba 1.svg"></img>
+            <img className="absolute left-0 xl:left-[10rem] top-0" src="plantaarriba 1.svg"></img>
+            <img className="absolute top-0 right-[26rem] xl:right-[40rem]" src="plantitaarriba 1.svg"></img>
             <div className="w-2/3 flex flex-col items-center justify-center">
                 <div className="z-10 lg:w-[70%] xl:w-[50%] justify-left items-left">
                     <p className="text-cyanDarker lg:text-lg xl:text-lg font-semilight ">Trabajemos juntos!</p>
@@ -26,27 +26,27 @@ function Contact(){
     <ul className="mt-2 flex flex-col gap-2">
       <li>
         <button className="bg-cyanDark p-2 rounded size-18">
-          <img className="size-6" src="/src/assets/images/behance.svg" />
+          <img className="size-6" src="behance.svg" />
         </button>
       </li>
       <li>
         <button className="bg-cyanDark p-2 rounded size-18">
-          <img className="size-6" src="/src/assets/images/tiktok.svg" />
+          <img className="size-6" src="tiktok.svg" />
         </button>
       </li>
       <li>
         <button className="bg-cyanDark p-2 rounded size-18">
-          <img className="size-6" src="/src/assets/images/insta.svg" />
+          <img className="size-6" src="insta.svg" />
         </button>
       </li>
     </ul>
   </div>
   <img
     className="lg:-ml-28 lg:scale-[1.5] xl:-ml-44 xl:scale-[2.4] pointer-events-none"
-    src="/src/assets/images/contact1.svg"
+    src="contact1.svg"
   />
 </div>
-    <img className="absolute left-0 bottom-0 xl:left-[10rem]" src="/src/assets/images/contactohonguito 1.svg"></img>
+    <img className="absolute left-0 bottom-0 xl:left-[10rem]" src="contactohonguito 1.svg"></img>
     </section>
         </>
     )

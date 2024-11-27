@@ -4,14 +4,14 @@ function AboutMe(){
     return(
         <>
             <div className="relative w-full h-[90vh] flex justify-between ">
-                <img className="absolute pointer-events-none" src="/src/assets/images/qs1.svg"></img>
-                <img className="absolute right-0 " src="/src/assets/images/qs2.svg"></img>
+                <img className="absolute pointer-events-none" src="qs1.svg"></img>
+                <img className="absolute right-0 " src="qs2.svg"></img>
                 <div className="w-1/2 flex ml-[6rem] items-center ">
-                    <img className="scale-[.65]" src="/src/assets/images/fotodeinicio.png" ></img>
+                    <img className="scale-[.65]" src="fotodeinicio.png" ></img>
                 </div>
                 <div className="w-1/2 flex flex-col -ml-[10rem] justify-center text-center mr-[5rem] lg:mt-[3rem] lg:scale-[0.85] xl:scale-[1.2]">
                     <p className="text-purplem font-light">Permitanme presentarme, soy</p>
-                    <img className=" scale-[0.8] xl:scale-[0.6]" src="/src/assets/images/nombre.svg"></img>
+                    <img className=" scale-[0.8] xl:scale-[0.6]" src="nombre.svg"></img>
                     <div className="relative scale-90 ">
                         <p className="text-cyanDark text-balance px-[10rem] z-20">
                         Soy una diseñadora gráfica salvadoreña que cree en el diseño como la herramienta que vincula al mundo.<br/>
@@ -21,9 +21,9 @@ function AboutMe(){
                     </div>
 
                 </div>
-                <img className="absolute bottom-0" src="/src/assets/images/qs3.svg"></img>
-                <img className="absolute bottom-0 xl:left-[40%] left-[37%] scale" src="/src/assets/images/qs5.svg"></img>
-                <img src="/src/assets/images/qs6.svg" className="absolute right-0 bottom-0 "></img>
+                <img className="absolute bottom-0" src="qs3.svg"></img>
+                <img className="absolute bottom-0 xl:left-[40%] left-[37%] scale" src="qs5.svg"></img>
+                <img src="qs6.svg" className="absolute right-0 bottom-0 "></img>
                 </div>
         </>
     )

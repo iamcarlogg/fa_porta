@@ -11,19 +11,19 @@ function Eleonor() {
                 {/* Imagen por defecto */}
                 <img
                   className="rounded-xl transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 object-cover"
-                  src="/src/assets/images/eleonorboton copy.png"
+                  src="eleonorboton copy.png"
                   alt="Imagen principal"
                 />
 
                 {/* Imagen al hacer hover */}
                 <img
                   className="rounded-xl opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 absolute inset-0 w-full h-full object-cover"
-                  src="/src/assets/images/loteriaboton1.png"
+                  src="loteriaboton1.png"
                   alt="Imagen al hacer hover"
                 />
               </button>
               <div className="w-1/2 flex flex-col justify-center items-center text-center ">
-                <img src="/src/assets/images/eleonortitulo.svg"></img>
+                <img src="eleonortitulo.svg"></img>
                 <p className="">
                 Tuve la oportunidad de rediseñar la cubierta del libro Eleanor y Park como práctica de ilustración, ejercicio que me permitió desarrollar un estilo dirigido a un público juvenil. Eleanor y Park, dos adolescentes muy distintos, encuentran un vínculo que cambia sus vidas, conectando a través de elementos importantes de la historia retomados dentro de la portada de la propuesta.
                 </p>
@@ -45,14 +45,14 @@ function Eleonor() {
                 {/* Imagen por defecto */}
                 <img
                   className="rounded-xl transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 object-cover"
-                  src="/src/assets/images/eleonorboton copy.png"
+                  src="eleonorboton copy.png"
                   alt="Imagen principal"
                 />
 
                 {/* Imagen al hacer hover */}
                 <img
                   className="rounded-xl opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 absolute inset-0 w-full h-full object-cover"
-                  src="/src/assets/images/eleonorboton2.png"
+                  src="eleonorboton2.png"
                   alt="Imagen al hacer hover"
                 />
               </button>

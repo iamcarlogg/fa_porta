@@ -3,13 +3,13 @@ import Carousel from "./Carousel"
 function Thirdpart() {
     return (
        <>
-        <div className="w-full h-[90vh] bg-white items-center justify-center flex flex-col ">
-            <h2 className="p-2 lg:text-4xl xl:text-6xl font-serif text-cyanm"> Proyectos </h2>
+        <div className="relative w-full h-[75vh] bg-white flex flex-col justify-center text-center ">
+        <img src="florcar.svg" className="absolute z-20 right-[8%] top-0"></img>
+            <h2 className="p-2 lg:text-4xl xl:text-6xl font-serif text-cyanm mb-[6rem]"> Proyectos </h2>
             <Carousel/>
+        <img className="absolute bottom-0 left-[5%]" src="florcar2.svg"></img>
         </div>
-        <div>
-                
-            </div>
+       
         
        </>
     )

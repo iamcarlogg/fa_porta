@@ -18,10 +18,10 @@ function SecondPart() {
               <button className="mt-4 w-40 rounded-xl bg-cyanDark p-2 text-white  hover:bg-cyanm transition duration-300">Mas sobre mi</button>
             </div>
             <div className="w-1/3 h-full p-2  flex justify-center items-center scale-[0.70]">
-              <img src="/src/assets/images/fotodeinicio.png" className="img-contain"></img>
+              <img src="fotodeinicio.png" className="img-contain"></img>
             </div>
           </div>
-          <img src="/src/assets/images/hongo.png" className="absolute object-scale-down lg:size-20 xl:size-28 bottom-0 "/>
+          <img src="hongo.png" className="absolute object-scale-down lg:size-20 xl:size-28 bottom-0 "/>
 
         </div>
         <div className="h-[45vh] bg-purplem flex  justify-center">

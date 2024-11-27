@@ -9,19 +9,19 @@ function Fovialito() {
                 {/* Imagen por defecto */}
                 <img
                   className="rounded-xl transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 object-cover"
-                  src="/src/assets/images/loteriaboton 2.png"
+                  src="loteriaboton 2.png"
                   alt="Imagen principal"
                 />
 
                 {/* Imagen al hacer hover */}
                 <img
                   className="rounded-xl opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 absolute inset-0 w-full h-full object-cover"
-                  src="/src/assets/images/gmw3.png"
+                  src="gmw3.png"
                   alt="Imagen al hacer hover"
                 />
               </button>
               <div className="w-1/2 flex flex-col justify-center items-center text-center ">
-                <img className="" src="/src/assets/images/Group 81.svg"></img>
+                <img className="" src="Group 81.svg"></img>
                 <div className="w-[60%]">
                   <p className="text-[13px] font-sans text-white text-balance p-2">
                     La Lotería de Fovialito que fue creada para la Semana
@@ -36,7 +36,7 @@ function Fovialito() {
                     Ilustracion <b>Aplicada</b>
                   </p>
                 </div>
-                <img src="/src/assets/images/creditosfovial.svg"></img>
+                <img src="creditosfovial.svg"></img>
               </div>
             </div>
           </div>
@@ -44,37 +44,37 @@ function Fovialito() {
           <div className="relative bg-gradient-to-r from-fovial from-10%  to-white  h-full w-[300px] flex-shrink-0">
             <img
               className="absolute bottom-0 right-0"
-              src="/src/assets/images/tarjeta1.png"
+              src="tarjeta1.png"
             ></img>
             <img
               className="absolute bottom-[7.5rem] -right-[1.3rem]"
-              src="/src/assets/images/tarjeta2.png"
+              src="tarjeta2.png"
             ></img>
           </div>
           <div className="bg-white relative  h-full w-[2300px] xl:w-[2600px] flex flex-shrink-0 justify-around ">
             <img
               className="-mr-[15rem] scale-[1]"
-              src="/src/assets/images/loteria1.png"
+              src="loteria1.png"
             ></img>
             <img
               className="xl:scale-[0.8]"
-              src="/src/assets/images/instrucctivo1.png"
+              src="instrucctivo1.png"
             ></img>
             <img
               className="-ml-[15rem] lg:scale-[.6]"
-              src="/src/assets/images/loteriacon.png"
+              src="loteriacon.png"
             ></img>
           </div>
           <div className="bg-gradient-to-r from-white to-fovialgreen  h-full w-[125px] flex-shrink-0"></div>
           <div className="bg-fovialgreen  h-full w-[1800px] flex-shrink-0 flex justify-center items-center">
-            <img src="/src/assets/images/fovial3.png"></img>
+            <img src="fovial3.png"></img>
           </div>
           <div className="bg-gradient-to-r from-fovialgreen to-fovialwhite  h-full w-[125px] flex-shrink-0"></div>
           <div className="bg-white  h-full w-[1000px] flex-shrink-0 flex items-center">
             <div className="relative w-1/2 h-full flex flex-col items-start text-center justify-center">
               <img
                 className="xl:ml-12 xl:scale-[1]"
-                src="/src/assets/images/fovialpru.png"
+                src="fovialpru.png"
               ></img>
               <button className="absolute text-white bottom-[12rem] xl:bottom-[18rem] left-[9.5rem] p-2 rounded-xl bg-fovial w-28 hover:bg-cyanm transition trasform duration-200">
                 Ver fotos
@@ -86,14 +86,14 @@ function Fovialito() {
                 {/* Imagen por defecto */}
                 <img
                   className="rounded-xl transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 object-cover"
-                  src="/src/assets/images/eleonorboton copy.png"
+                  src="eleonorboton copy.png"
                   alt="Imagen principal"
                 />
 
                 {/* Imagen al hacer hover */}
                 <img
                   className="rounded-xl opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 absolute inset-0 w-full h-full object-cover"
-                  src="/src/assets/images/eleonorboton2.png"
+                  src="eleonorboton2.png"
                   alt="Imagen al hacer hover"
                 />
               </button>
