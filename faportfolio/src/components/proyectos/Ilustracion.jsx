@@ -6,7 +6,7 @@ function Ilustracion(){
     
 
         
-    <div className=" w-full h-[90vh] bg-gradient-to-b from-[#7EE0E3]  to-white flex justify-center">
+    <div className="relative w-full h-[100vh] bg-gradient-to-b from-[#7EE0E3]  to-white flex justify-center">
     <div className="absolute pointer-events-none ">
       <img className="xl:hidden " src="arriblab.png"></img>
         <img className="xl:object-cover hidden xl:block" src="arribaxl.png"></img>
@@ -27,7 +27,7 @@ function Ilustracion(){
         <Link to ="/"><button className="p-1 bg-cyanm rounded-xl mt-4 lg:w-[5rem] xl:w-[8rem] text-white hover:bg-cyanDark hover:text-white transition transform duration-200">Volver</button></Link>
 
     </div>
-    <div className="absolute xl:bottom-3 lg:-bottom-3 pointer-events-none">
+    <div className="absolute xl:bottom-0 lg:-bottom-0 pointer-events-none">
     <img className='xl:hidden' src="abajozul.png"></img>
     <img className="xl:object-cover hidden xl:block" src="abajoxl.png"></img>
 

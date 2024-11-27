@@ -36,7 +36,7 @@ const Carousel = () => {
       {/* Botón Anterior */}
 
       {/* Carrusel */}
-      <div className="flex justify-center items-center overflow-hidden relative xl:scale-[1.5]">
+      <div className="flex justify-center items-center overflow-hidden relative lg:scale-[1] xl:scale-[1.2]">
         <div className="flex items-center justify-center w-full space-x-4">
           {displayedImages.map((image, index) => (
             <div
@@ -61,9 +61,9 @@ const Carousel = () => {
               />
               {index === 1 && (
                 <div className="text-center mt-2">
-                  <p className="font-serif text-sm font-bold">{image.nombre}</p>
+                  <p className="font-sans text-sm font-bold">{image.nombre}</p>
 
-                  <p className="font-serif text-sm font-light">{image.cat}</p>
+                  <p className="font-sans text-sm font-light">{image.cat}</p>
                 </div>
               )}
             </div>

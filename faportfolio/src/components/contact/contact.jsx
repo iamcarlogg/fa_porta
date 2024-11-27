@@ -7,9 +7,9 @@ function Contact(){
             <img className="absolute top-0 right-[26rem] xl:right-[40rem]" src="plantitaarriba 1.svg"></img>
             <div className="w-2/3 flex flex-col items-center justify-center">
                 <div className="z-10 lg:w-[70%] xl:w-[50%] justify-left items-left">
-                    <p className="text-cyanDarker lg:text-lg xl:text-lg font-semilight ">Trabajemos juntos!</p>
-                    <h1 className="text-cyanDarker font-serif text-6xl">Contactame</h1>
-                    <form className="">
+                    <p className="text-cyanDarker lg:text-lg xl:text-lg font-semilight pl-6 ">Trabajemos juntos!</p>
+                    <h1 className="text-cyanDarker font-serif text-6xl pl-6">Contactame</h1>
+                    <form className="p-6">
                         <label className="text-sm font-light font-sans text-cyanDarker">Nombre</label>
                         <input type="text" placeholder="Nombre" className="w-full p-2 my-2 rounded-2xl"></input>
                         <label className="text-sm font-light font-sans text-cyanDarker">E-mail</label>
@@ -42,7 +42,7 @@ function Contact(){
     </ul>
   </div>
   <img
-    className="lg:-ml-28 lg:scale-[1.5] xl:-ml-44 xl:scale-[2.4] pointer-events-none"
+    className="lg:-ml-28 lg:scale-[1] xl:-ml-44 xl:scale-[1.8] object-fit pointer-events-none"
     src="contact1.svg"
   />
 </div>

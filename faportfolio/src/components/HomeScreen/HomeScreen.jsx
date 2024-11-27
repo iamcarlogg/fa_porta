@@ -7,7 +7,7 @@ import Welcome from "./Welcome"
 function HomeScreen(){
     return(
         <>
-        <div className="flex flex-col h-screen bg-cyanm">
+        <div className="flex flex-col h-screen w-screen bg-cyanm">
           
           <div id="scroll" className="flex-1 overflow-y-scroll scroll-smooth">
             <Welcome/>

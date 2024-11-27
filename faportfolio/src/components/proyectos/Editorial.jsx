@@ -6,7 +6,7 @@ function Editorial() {
     
 
         
-          <div className=" w-full h-[90vh] bg-gradient-to-b from-pinky  to-white flex justify-center">
+          <div className="relative w-full h-[100vh] bg-gradient-to-b from-pinky  to-white flex justify-center">
           <div className="absolute pointer-events-none ">
             <img className="xl:object-cover" src="editorialarriba.png"></img>
           </div>
@@ -25,7 +25,7 @@ function Editorial() {
               </div>
               <Link to ="/"><button className="p-1 bg-pinky rounded-xl mt-4 lg:w-[5rem] xl:w-[8rem] text-purpleDarker hover:bg-cyanDark hover:text-white transition transform duration-200">Volver</button></Link>
           </div>
-          <div className="absolute xl:bottom-3 lg:-bottom-3 pointer-events-none">
+          <div className="absolute xl:bottom-0 lg:-bottom-0 pointer-events-none">
           <img src="editorialabajo.png"></img>
           </div>
           

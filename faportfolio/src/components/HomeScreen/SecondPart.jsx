@@ -4,11 +4,11 @@ import Testimony from "./testimony";
 function SecondPart() {
   return (
     <>
-        <div className="relative h-[45vh]  bg-white flex justify-center items-center">
+        <div className="relative md:h-[50vh] lg:h-[50vh] xl:h-[45vh] w-screen bg-white flex justify-center items-center">
 
           <div className="w-5/6 h-5/6 flex  ">
             <div className="w-2/3 h-full p-2 justify-center items-center text-left ">
-              <h2 className="lg:text-4xl xl:text-6xl font-light font-serif tracking-tighter text-balance p-1 text-cyanm">
+              <h2 className="md:text-2xl lg:text-3xl xl:text-4xl font-light font-serif tracking-tighter text-balance p-1 text-cyanm">
                 Compromentida con el poder del <a className="no-click text-cyanDarker">diseño para conectar</a>
               </h2>
               
