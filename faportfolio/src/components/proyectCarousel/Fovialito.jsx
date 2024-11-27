@@ -1,7 +1,10 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 function Fovialito() {
     return (
       <>
-        <div className="h-[90vh] w-full overflow-x-scroll overflow-y-hidden flex">
+        <div className=" h-[90vh] w-full overflow-x-scroll overflow-y-hidden flex">
           {/* Sección 1 */}
           <div className="bg-fovial h-full lg:w-[1000px] xl:w-[1170px]  flex-shrink-0 justify-around">
             <div className="w-full flex justify-center items-center text-center h-full lg:scale-125 xl:scale-150">
@@ -76,27 +79,28 @@ function Fovialito() {
                 className="xl:ml-12 xl:scale-[1]"
                 src="fovialpru.png"
               ></img>
-              <button className="absolute text-white bottom-[12rem] xl:bottom-[18rem] left-[9.5rem] p-2 rounded-xl bg-fovial w-28 hover:bg-cyanm transition trasform duration-200">
+              <button className="absolute text-white bottom-[12rem] xl:bottom-[12rem] left-[9.5rem] p-2 rounded-xl bg-fovial w-28 hover:bg-cyanm transition trasform duration-200">
                 Ver fotos
               </button>
             </div>
 
             <div className="w-full flex justify-center items-center text-center h-full lg:scale-125 xl:scale-150">
-              <button className="bg-cyanm p-4  border-[10px] border-cyanm w-[300px] h-[390px] ml-12 xl:ml-[10rem] rounded-3xl group relative overflow-hidden">
-                {/* Imagen por defecto */}
-                <img
-                  className="rounded-xl transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 object-cover"
-                  src="eleonorboton copy.png"
-                  alt="Imagen principal"
-                />
-
-                {/* Imagen al hacer hover */}
-                <img
-                  className="rounded-xl opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 absolute inset-0 w-full h-full object-cover"
-                  src="eleonorboton2.png"
-                  alt="Imagen al hacer hover"
-                />
-              </button>
+              <Link to="/eleonor">
+                <button className="bg-cyanm p-4  border-[10px] border-cyanm w-[300px] h-[390px] ml-12 xl:ml-[10rem] rounded-3xl group relative overflow-hidden">
+                  {/* Imagen por defecto */}
+                  <img
+                    className="rounded-xl transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 object-cover"
+                    src="eleonorboton copy.png"
+                    alt="Imagen principal"
+                  />
+                  {/* Imagen al hacer hover */}
+                  <img
+                    className="rounded-xl opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 absolute inset-0 w-full h-full object-cover"
+                    src="eleonorboton2.png"
+                    alt="Imagen al hacer hover"
+                  />
+                </button>
+              </Link>
             </div>
           </div>
         </div>

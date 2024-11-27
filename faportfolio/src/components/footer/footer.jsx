@@ -12,7 +12,7 @@ function Footer() {
             <a className="px-8 text-white font-medium" href="mailto:famrtnz13@gmail.com">famrtnz13@gmail.com</a>
         </div>
         <div className="w-auto">
-            <p className="text-white font-semibold text-right">© 2024 por Fátima Lópezz</p>
+            <p className="text-white font-semibold text-right">© 2024 por Fátima López</p>
         </div>
         </div>
     </footer>
