@@ -6,7 +6,7 @@ function Publicitario() {
     
 
         
-          <div className="relative w-full h-[100vh] bg-gradient-to-b from-pinky  to-white flex justify-center">
+          <div className="relative w-screen h-[100vh] bg-gradient-to-b from-pinky  to-white flex justify-center">
           <div className="absolute pointer-events-none ">
             <img className="xl:object-cover" src="editorialarriba.png"></img>
           </div>

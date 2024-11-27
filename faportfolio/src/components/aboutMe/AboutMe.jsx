@@ -3,7 +3,7 @@ function AboutMe(){
 
     return(
         <>
-            <div className="relative w-full h-[90vh] flex justify-between ">
+            <div className="relative w-screen h-[90vh] flex justify-between ">
                 <img className="absolute pointer-events-none" src="qs1.svg"></img>
                 <img className="absolute right-0 " src="qs2.svg"></img>
                 <div className="w-1/2 flex ml-[6rem] items-center ">

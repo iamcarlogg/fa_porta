@@ -6,7 +6,7 @@ function Ilustracion(){
     
 
         
-    <div className="relative w-full h-[100vh] bg-gradient-to-b from-[#7EE0E3]  to-white flex justify-center">
+    <div className="relative w-screen h-[100vh] bg-gradient-to-b from-[#7EE0E3]  to-white flex justify-center">
     <div className="absolute pointer-events-none ">
       <img className="xl:hidden " src="arriblab.png"></img>
         <img className="xl:object-cover hidden xl:block" src="arribaxl.png"></img>

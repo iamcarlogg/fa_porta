@@ -11,7 +11,7 @@ function Editorial() {
             <img className="xl:object-cover" src="editorialarriba.png"></img>
           </div>
           <div className="-mt-20 flex items-center justify-center flex-col ">
-              <img className="lg:size-[20rem]" src="editorial.svg"></img>
+              <img className="lg:size-[20rem] xl:size[18rem]" src="editorial.svg"></img>
               <p className="w-1/2 text-center -mt-20 text-balance text-purpleDarker">
               El diseño editorial da vida al contenido, creando una experiencia visual que guía y conecta con el lector. Es transformar la información en algo memorable, donde cada página cuenta una historia que se siente y perdura.
               </p>

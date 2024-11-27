@@ -4,7 +4,7 @@ import Testimony from "./testimony";
 function SecondPart() {
   return (
     <>
-        <div className="relative md:h-[50vh] lg:h-[50vh] xl:h-[45vh] w-screen bg-white flex justify-center items-center">
+        <div className="relative md:h-[50vh] lg:h-[50vh] xl:h-[50vh] w-screen bg-white flex justify-center items-center">
 
           <div className="w-5/6 h-5/6 flex  ">
             <div className="w-2/3 h-full p-2 justify-center items-center text-left ">
